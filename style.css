@@ -1,0 +1,452 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: neue;
+}
+
+#main{
+    background-color: #04040D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+    color: grey;
+    position: relative;
+}
+
+#main p{
+    width: 35%;
+    text-align: center;
+    position: absolute;
+    top: 82%;
+}
+
+#circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 255, 0.842);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+#circle h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+#cursor{
+    height: 15px;
+    width: 15px;
+    background-color: #1955EB;
+    border-radius: 50px;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+    color: black;
+    padding: 10px;
+}
+
+#loader{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding: 50px 0px;
+}
+
+#nav{
+    display: flex;
+    width: 100%;
+    padding :0px 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+#nav h1{
+    font-weight: 600;
+    font-size: 35px;
+    z-index: 1;
+}
+
+#text{
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-left: 70px;
+    position: relative;
+    scale: .9;
+}
+
+#text h1{
+    font-size: 110px;
+    font-weight: 600;
+}
+
+#text p{
+    font-size: 15px;
+    font-weight: 200;
+    position: absolute;
+    width:40%;
+    top: 62%;
+    right: -4%;
+}
+
+#text button{
+    border: 1px solid #ddd;
+    background-color: transparent;
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#text button:hover{
+    background-color: #1955EB;
+    border: 1px solid  #1955EB;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    padding :0px 60px ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#box1{
+    height: 90%;
+    width: 43%;
+    border-radius: 30px;
+    background-image: url(https://api.thesight.io/storage/public/resources/projects/SimmRace/_caseGridBig/simmsa.jpg);
+    background-size: 150%;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#box1 button{
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+#box2{
+    height: 70%;
+    width: 35%;
+    border-radius: 30px;
+    background-image: url(https://api.thesight.io/storage/public/resources/_caseGridSmall/oboosho.jpg);
+    background-size: 120%;
+    background-position: bottom;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#box2 button{
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#page3 h1{
+    width: 40%;
+    font-weight: 800;
+    font-size: 120px;
+    margin-bottom: 5%;
+}
+
+#page3 p{
+    font-weight: 200;
+    font-size: 20px;
+    opacity: .5;
+    margin-top: 5%;
+}
+
+#box3{
+    height: 80%;
+    width: 30%;
+    border-radius: 30px;
+    background-image: url(https://api.thesight.io/storage/public/resources/projects/ErorStore/_caseGridTiny/preview.jpg);
+    background-size: 120%;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#box3 button{
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+
+#page4{
+    height: 100%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+#box4{
+    height: 70%;
+    width: 35%;
+    border-radius: 30px;
+    background-image: url(https://api.thesight.io/storage/public/resources/projects/TastyCoffee/_caseGridSmall/preview.jpg);
+    background-size: 130%;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#box4 button{
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+#box5{
+    height: 90%;
+    width: 43%;
+    background-color: red;
+    border-radius: 30px;
+    background-image: url(https://api.thesight.io/storage/public/resources/projects/Locca/_caseGridBig/preview.jpg);
+    background-size: 120%;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#box5 button{
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+}
+
+#page5{
+    height: 125%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+#page5 h1{
+    font-weight: 600;
+    font-size: 140px;
+    scale: .9;
+}
+
+#page5 h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    opacity: .3;
+    background-color: white; 
+    display: block;
+}
+
+#page5 p{
+    width: 40%;
+    opacity: .8;
+    font-weight: 200;
+    font-size: 30px;
+    scale: .7;
+}
+
+#page5 h6{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 60px;
+    color: #1649C9;
+}
+
+#page6{
+    height: 100%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#text2{
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#text2 p{
+    opacity: .8;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#text2 h6{
+    font-weight: 600;
+    font-size: 20px;
+    color: #1649C9;
+}
+
+#text2 h1{
+    font-weight: 400;
+    font-size: 120px;
+}
+
+#pictures{
+    height: 50%;
+    width: 50%;
+}
+
+#pictures img{
+   width: 30%;
+   margin-top: 90px;
+}
+
+#page7{
+    height: 100%;
+    width: 100%;
+    background-color: #031c33;
+    color: white;
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 80px;
+}
+
+#part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#part1 h1{
+    font-weight: 400;
+    font-size: 120px;
+}
+
+#pt{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+#pttext{
+    text-align: end;
+}
+
+#pt h3{
+   font-size: 30px;
+   font-weight: 300;
+}
+
+#pt h4{
+    font-size: 20px;
+    font-weight: 300;
+    opacity: .7;
+}
+
+#pt i{
+    font-size: 50px;
+}
+ 
+#part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#part2 h3{
+    opacity: .5;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 8px;
+}
+
+#pt2{
+    position: absolute;
+    left: 30%;
+}
